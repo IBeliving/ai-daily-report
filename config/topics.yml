@@ -1,0 +1,38 @@
+# 关注领域配置
+# 每个主题包含：名称、搜索关键词、结果数量
+
+topics:
+  - name: "AI科技"
+    keywords:
+      - "AI人工智能最新进展"
+      - "ChatGPT GPT-5"
+      - "大模型"
+      - "Agent"
+    max_results: 5
+
+  - name: "科技动态"
+    keywords:
+      - "科技新闻"
+      - "科技公司动态"
+      - "科技创新"
+    max_results: 5
+
+  - name: "行业资讯"
+    keywords:
+      - "行业热点"
+      - "市场趋势"
+      - "商业新闻"
+    max_results: 5
+
+# Tavily 配置
+tavily_config:
+  topic: "news"  # general or news
+  days: 1        # 最近几天的新闻
+  search_depth: "advanced"  # basic or advanced
+
+# 报告配置
+report_config:
+  title: "AI 每日速递"
+  subtitle: "精选 AI 与科技领域最新动态"
+  max_summary_length: 300
+  language: "zh-CN"

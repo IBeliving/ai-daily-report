@@ -1,0 +1,27 @@
+{
+  "name": "ai-daily-report",
+  "version": "1.0.0",
+  "description": "AI驱动的自动化日报生成系统",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/main.ts",
+    "start": "node dist/main.js",
+    "generate": "npm run build && npm run start"
+  },
+  "keywords": ["ai", "daily-report", "automation", "github-actions"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "ejs": "^3.1.9",
+    "openai": "^4.28.0",
+    "rss-parser": "^3.13.0",
+    "yaml": "^2.3.4"
+  }
+}
